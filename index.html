@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vaste Magazine by Studio Khi</title>
+    <link rel="icon" href="/src/images/favicon/favicon.svg"/>
+    <meta name="description" content="Through inspiring articles, immersive magazines, and a thoughtfully curated newsletter, Vaste connects adventure seekers and nature lovers with stories that spark exploration and authenticity.">
+</head>
+<body>
+<div id="menu" class="fixed top-0 right-0 w-1/2 h-[100lvh] bg-white flex flex-col translate-x-full transition-transform duration-700 z-50">
+    <svg class="w-full fill-black mt-16 p-5" viewBox="0 0 1400 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1169.32 372.583V7.54639H1400V50.3875H1214.44V164.715H1369.58V207.556H1214.44V329.742H1400V372.583H1169.32Z"/>
+        <path d="M979.645 372.583V50.3875H855.177V7.54639H1149.23V50.3875H1024.77V372.583H979.645Z"/>
+        <path d="M716.067 380.188C690.211 380.188 666.889 375.794 646.102 367.006C625.484 358.218 608.415 345.712 594.895 329.488C581.545 313.095 572.841 293.745 568.785 271.437L615.429 264.086C621.344 287.069 633.596 305.068 652.186 318.081C670.945 330.925 692.999 337.346 718.349 337.346C734.742 337.346 749.529 334.811 762.711 329.742C776.062 324.503 786.624 317.067 794.398 307.434C802.172 297.801 806.059 286.393 806.059 273.212C806.059 265.1 804.623 258.171 801.75 252.425C799.046 246.51 795.243 241.524 790.342 237.468C785.61 233.243 780.202 229.695 774.118 226.822C768.034 223.949 761.697 221.583 755.106 219.724L662.072 192.092C651.932 189.05 642.131 185.248 632.667 180.685C623.203 175.953 614.753 170.123 607.317 163.194C599.881 156.096 593.966 147.646 589.572 137.844C585.178 127.873 582.981 116.128 582.981 102.608C582.981 80.9759 588.558 62.5551 599.712 47.3452C611.035 31.9663 626.329 20.221 645.595 12.109C664.861 3.99711 686.577 0.0256396 710.744 0.194626C735.249 0.363632 757.134 4.75759 776.4 13.3765C795.835 21.8264 811.889 33.9943 824.564 49.8802C837.408 65.766 846.027 84.7783 850.421 106.917L802.51 115.283C799.975 100.411 794.314 87.6513 785.526 77.0044C776.907 66.1885 766.091 57.9076 753.078 52.1617C740.065 46.2467 725.785 43.2047 710.237 43.0357C695.365 42.8667 681.93 45.2327 669.931 50.1337C657.932 55.0346 648.383 61.8791 641.286 70.667C634.188 79.2859 630.639 89.2568 630.639 100.58C630.639 111.734 633.85 120.775 640.272 127.704C646.693 134.464 654.552 139.872 663.847 143.928C673.311 147.815 682.521 151.026 691.478 153.561L760.936 173.587C768.879 175.784 778.005 178.826 788.314 182.713C798.792 186.6 808.932 192.092 818.734 199.19C828.536 206.119 836.648 215.414 843.07 227.075C849.492 238.567 852.703 253.101 852.703 270.677C852.703 288.252 849.154 303.885 842.056 317.574C835.127 331.263 825.409 342.754 812.903 352.049C800.398 361.175 785.864 368.104 769.302 372.836C752.74 377.737 734.995 380.188 716.067 380.188Z"/>
+        <path d="M264.091 372.583L386.277 7.54639H449.145L571.331 372.583H524.433L410.106 33.9101H424.302L310.988 372.583H264.091ZM322.903 287.154V244.82H512.519V287.154H322.903Z"/>
+        <path d="M122.186 372.583L0 7.54639H46.8971L153.113 324.672L260.342 7.54639H307.239L185.053 372.583H122.186Z"/>
+    </svg>
+    <div class="w-full h-px bg-gray-200"></div>
+    <div class="flex flex-col p-5">
+        <div id="post-menu" class="text-[2.5rem] font-medium tracking-tighter cursor-pointer">[1] Articles</div>
+        <div id="magazine-menu" class="text-[2.5rem] font-medium tracking-tighter cursor-pointer">[2] Magazines</div>
+        <div id="newsletter-menu" class="text-[2.5rem] font-medium tracking-tighter cursor-pointer">[3] Newsletter</div>
+    </div>
+    <div class="w-full h-px bg-gray-200"></div>
+    <div class="p-5">
+        <label for="search">
+            <input class="w-fit text-[2.5rem] font-medium tracking-tighter bg-transparent focus:outline-transparent placeholder-gray-200" id="search"
+                   name="search" type="search"
+                   placeholder="[Search]">
+        </label>
+    </div>
+    <div class="w-full h-px bg-gray-200"></div>
+    <div class="w-full h-px bg-gray-200 mt-auto"></div>
+    <div class="p-5 text-[1.0625rem] font-medium tracking-tighter">Vaste Magazine, Design & Code Studio Khi</div>
+</div>
+<div id="menu-background" class="pointer-events-none fixed top-0 left-0 w-full h-[100lvh] bg-black opacity-0 transition-opacity duration-700 z-40">
+
+</div>
+<nav
+    class="relative h-16 w-full z-50 grid grid-cols-6 bg-white border-b border-gray-200 divide-x divide-solid divide-gray-200">
+    <div id="post-link" class="w-full flex flex-row items-center">
+        <div class="w-fit cursor-pointer flex flex-row items-center group px-5 gap-px">
+            [
+            <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <circle cx="6" cy="6" r="6"/>
+            </svg>
+            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out">
+                <span class="pl-1"></span>
+                Articles
+            </div>
+            ]
+        </div>
+    </div>
+    <div id="magazine-link" class="w-full flex flex-row items-center">
+        <div class="w-fit cursor-pointer flex flex-row items-center group px-5 gap-px">
+            [
+            <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <circle cx="6" cy="6" r="6"/>
+            </svg>
+            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out">
+                <span class="pl-1"></span>
+                Magazines
+            </div>
+            ]
+        </div>
+    </div>
+    <div id="newsletter-link" class="w-full flex flex-row items-center">
+        <div class="w-fit cursor-pointer flex flex-row items-center group px-5 gap-px">
+            [
+            <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <circle cx="6" cy="6" r="6"/>
+            </svg>
+            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out">
+                <span class="pl-1"></span>
+                Newsletter
+            </div>
+            ]
+        </div>
+    </div>
+    <div class="w-full"></div>
+    <div class="w-full"></div>
+    <div class="flex flex-row justify-end w-full">
+        <div id="menu-button" class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px group px-5">
+            [
+            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out">
+                Menu
+                <span class="pl-1"></span>
+            </div>
+            <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <circle cx="6" cy="6" r="6"/>
+            </svg>
+            ]
+        </div>
+    </div>
+</nav>
+<main class="relative flex flex-col">
+    <section id="site-title" class="w-full z-30 grid grid-cols-6 bg-white divide-x divide-solid divide-gray-200 border-b border-gray-200 uppercase">
+        <div class="flex flex-row items-center justify-start col-span-2 h1 p-5">Vaste</div>
+        <div class="flex flex-row items-center justify-end col-span-4 h1 p-5">Magazine</div>
+    </section>
+    <section id="hero-section" class="relative w-full min-h-[600px]">
+        <img class="w-full h-full object-cover object-center" src="/src/images/hero.avif" alt="">
+        <div class="absolute top-0 left-0 bg-gradient-to-t from-black opacity-40 h-full w-full"></div>
+        <div class="flex flex-row items-start justify-start gap-11 absolute left-5 bottom-6 text-white">
+            <div>[Read]</div>
+            <div class="h2">The Healing Power of <br> Hiking Alone</div>
+        </div>
+    </section>
+    <section class="relative w-full grid grid-cols-6 border-b border-gray-200">
+        <div class="absolute top-0 left-0 z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class="py-96"></div>
+            <div class="py-96"></div>
+            <div class="py-96"></div>
+            <div class="py-96"></div>
+            <div class="py-96"></div>
+            <div class="py-96"></div>
+        </div>
+        <div class="py-96"></div>
+        <div class="relative z-20 py-96 col-span-5 flex flex-row items-start pl-4">
+            <div class="absolute left-[16.6vw] pl-4 pt-2 text-2xl">[About]</div>
+            <div class="indent-[25vw]">
+                <div class="text-5xl font-medium leading-[120%] pr-5">
+                    Through inspiring [1] <span class="show-picture underline">articles</span>,
+                    immersive [2] <span class="show-picture underline">magazines</span>,
+                    and a thoughtfully curated [3] <span
+                    class="show-picture underline">newsletter</span>, Vaste connects adventure
+                    seekers and nature
+                    lovers with stories that spark exploration and authenticity.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post-title" class="z-30 relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
+        <div class="absolute top-0 left-0 z-20 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <div class="relative z-20 flex flex-row items-end justify-between col-span-6 p-5">
+            <div class="h1 self-center">
+                Articles
+            </div>
+            <div class="flex flex-row items-center">
+                [
+                <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg"
+                     width="12" height="12" viewBox="0 0 12 12"
+                     fill="none">
+                    <circle cx="6" cy="6" r="6"/>
+                </svg>
+                ]
+            </div>
+        </div>
+    </section>
+    <section id="post-container" class="post-section relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
+        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <div class="post-infos relative z-0 flex flex-col items-start justify-between col-span-2 p-5">
+            <h2>
+                Exploring Brittany on Foot: A Journey Through Wild Coasts and Ancient Forests
+            </h2>
+            <p class="text-xl">
+                [12.01.25] <br>
+                [Harper Woods]
+            </p>
+        </div>
+        <div class="relative z-0 flex flex-col items-start justify-start gap-10 col-span-4 p-5">
+            <img class="post-image w-full object-center object-cover"
+                 src="/src/images/exploring-brittany-on-foot.avif" alt="">
+        </div>
+        <div class="col-span-2"></div>
+        <div class="post-paragraph relative z-0 flex flex-col items-start justify-start gap-10 col-span-3 p-5">
+            <p class="text-xl">
+                Brittany, with its rugged coastline and charming villages, is a paradise for hikers.
+                Walking the region’s winding paths, you’ll
+                encounter everything from towering cliffs to serene beaches, and ancient woodlands.
+                <br><br>
+                This article takes you on a journey through Brittany’s lesser-known trails, where
+                the beauty of nature and the rich history of the
+                land come together, inviting adventurers to discover the soul of this stunning
+                corner of France—one step at a time.
+            </p>
+            <a href="" class="text-xl">[Read More]</a>
+        </div>
+    </section>
+    <section class="post-section relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
+        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <div class="post-infos relative z-0 flex flex-col items-start justify-between col-span-2 p-5">
+            <h2>
+                Van Life: A Road Trip Through Europe with Sarah & Jean
+            </h2>
+            <p class="text-xl">
+                [25.09.24] <br>
+                [Sarah & Jean Chemi]
+            </p>
+        </div>
+        <div class="relative z-0 flex flex-col items-start justify-start gap-10 col-span-4 p-5">
+            <img class="post-image w-full object-center object-cover"
+                 src="/src/images/van-life.avif" alt="">
+        </div>
+        <div class="col-span-2"></div>
+        <div class="post-paragraph relative z-0 flex flex-col items-start justify-start gap-10 col-span-3 p-5">
+            <p class="text-xl">
+                Join Sarah and Jean as they embark on the ultimate adventure: a solo van trip across
+                Europe. From the rolling hills of the Scottish
+                Highlands to the sun-drenched beaches of southern Spain, their journey is a
+                celebration of freedom, spontaneity, and connection with
+                the road.
+                <br><br>
+                In this article, Sarah and Jean share the highs and lows of van life, from finding
+                the perfect parking spot to cooking meals under the
+                stars, and how traveling by van changed their perspective on what it means to truly
+                be "home."
+            </p>
+            <a href="" class="text-xl">[Read More]</a>
+        </div>
+    </section>
+    <section class="relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
+        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <div id="post-drag-container" class="relative flex w-full flex-row col-span-6 z-10 overflow-hidden pb-52">
+            <div id="post-wrapper" class="inline-flex">
+                <a href="" class="post shrink-0 w-[50rem] h-auto p-5 flex flex-col gap-5">
+                    <img class="aspect-video w-full h-auto object-center object-cover"
+                         src="/src/images/travelling-with-kids.avif" alt="">
+                    <div class="h2 w-2/3">
+                        Traveling with Kids: Adventures on the Road and in Nature
+                    </div>
+                    <p class="text-xl">
+                        [15.08.24] <br>
+                        [Mia Landers]
+                    </p>
+                </a>
+                <a href="" class="post shrink-0 w-[40rem] h-auto p-5 flex flex-col gap-5">
+                    <img class="aspect-square w-full h-auto object-center object-cover"
+                         src="/src/images/hiking-the-pyrenees.avif" alt="">
+                    <div class="h2 w-2/3">
+                        Hiking the Pyrenees: A Journey Through Mountains and Valleys
+                    </div>
+                    <p class="text-xl">
+                        [12.07.24] <br>
+                        [Rowan Blake]
+                    </p>
+                </a>
+                <a href="" class="post shrink-0 w-[50rem] h-auto p-5 flex flex-col gap-5">
+                    <img class="aspect-video w-full h-auto object-center object-cover"
+                         src="/src/images/on-horseback-accross-continents.avif" alt="">
+                    <div class="h2 w-2/3">
+                        On Horseback Across Continents: A Conversation with Emma Carter
+                    </div>
+                    <p class="text-xl">
+                        [08.06.24] <br>
+                        [Harper Woods]
+                    </p>
+                </a>
+                <a href="" class="post shrink-0 w-[40rem] h-auto p-5 flex flex-col gap-5">
+                    <img class="aspect-square w-full h-auto object-center object-cover"
+                         src="/src/images/the-power-of-running.avif" alt="">
+                    <div class="h2 w-2/3">
+                        The Power of Running: How a Simple Sport Transformed My Life
+                    </div>
+                    <p class="text-xl">
+                        [21.05.24] <br>
+                        [Elliot Rivers]
+                    </p>
+                </a>
+                <a href="" class="post shrink-0 w-[50rem] h-auto p-5 flex flex-col gap-5">
+                    <img class="aspect-video w-full h-auto object-center object-cover"
+                         src="/src/images/the-world-s-most-beautiful-hikes.avif" alt="">
+                    <div class="h2 w-2/3">
+                        The World’s Most Beautiful Hikes: A Bucket List for Adventurers
+                    </div>
+                    <p class="text-xl">
+                        [05.04.24] <br>
+                        [Rowan Blake]
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="site-transition" class="relative w-full grid grid-cols-6 bg-white border-b border-gray-200 h-[100lvh]">
+        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <span id="transition-bracket-left" class="absolute left-0 top-0 -translate-x-full">[</span>
+            <div id="clip-transition">
+                Adventure
+            </div>
+            <span id="transition-bracket-right" class="absolute left-full top-0">]</span>
+        </div>
+    </section>
+    <section id="magazine-title" class="z-30 relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
+        <div class="absolute top-0 left-0 z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <div class="relative z-20 flex flex-row items-end justify-between col-span-6 p-5">
+            <div class="h1 self-center">
+                Magazines
+            </div>
+            <div class="flex flex-row items-center">
+                [
+                <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg"
+                     width="12" height="12" viewBox="0 0 12 12"
+                     fill="none">
+                    <circle cx="6" cy="6" r="6"/>
+                </svg>
+                ]
+            </div>
+        </div>
+    </section>
+    <section id="magazine-container" class="relative w-full grid grid-cols-6 bg-white border-b border-gray-200 h-[100lvh]">
+        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <div class="relative top-0 left-0 h-[100lvh] w-full col-span-6">
+            <img class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto object-cover object-center rotate-12" src="/src/images/magazine/volume-1.avif" alt="">
+            <img class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto object-cover object-center -rotate-12" src="/src/images/magazine/volume-2.avif" alt="">
+            <img class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto object-cover object-center -rotate-6" src="/src/images/magazine/volume-3.avif" alt="">
+        </div>
+    </section>
+    <section id="cover" class="w-full h-[130lvh]">
+        <img class="w-full h-full object-center object-cover" src="/src/images/cover.avif" alt="">
+    </section>
+    <section id="newsletter-title" class="z-30 relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
+        <div class="absolute top-0 left-0 z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <div class="relative z-20 flex flex-row items-end justify-between col-span-6 p-5">
+            <div class="h1 self-center">
+                Newsletter
+            </div>
+            <div class="flex flex-row items-center">
+                [
+                <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg"
+                     width="12" height="12" viewBox="0 0 12 12"
+                     fill="none">
+                    <circle cx="6" cy="6" r="6"/>
+                </svg>
+                ]
+            </div>
+        </div>
+    </section>
+    <section id="newsletter-container" class="relative w-full grid grid-cols-6 border-b border-gray-200">
+        <div
+            class="absolute top-0 left-0 -z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class="pt-16 pb-72"></div>
+            <div class="pt-16 pb-72"></div>
+            <div class="pt-16 pb-72"></div>
+            <div class="pt-16 pb-72"></div>
+            <div class="pt-16 pb-72"></div>
+            <div class="pt-16 pb-72"></div>
+        </div>
+        <div class="py-72"></div>
+        <div class="py-72"></div>
+        <div class="relative z-0 pt-16 pb-72 col-span-3 flex flex-col items-start p-5">
+            <div>
+                Stay connected to the outdoors, no matter where you are. Our newsletter delivers
+                fresh inspiration, exclusive content, and the latest
+                from Vaste directly to your inbox—your weekly dose of nature, adventure, and ideas
+                to explore.
+            </div>
+            <div class="flex flex-row gap-1 mt-8">
+                <label for="email">
+                    <input class="w-fit bg-transparent focus:outline-transparent" id="email"
+                           name="email" type="email"
+                           placeholder="[Enter your email]">
+                </label>
+                <button>[Submit]</button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="footer" class="relative w-full h-[100lvh] grid grid-cols-6 border-b border-gray-200">
+    <div class="absolute top-0 left-0 -z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+        <div class="pt-16 pb-96"></div>
+        <div class="pt-16 pb-96"></div>
+        <div class="pt-16 pb-96"></div>
+        <div class="pt-16 pb-96"></div>
+        <div class="pt-16 pb-96"></div>
+        <div class="pt-16 pb-96"></div>
+    </div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-row items-center justify-center gap-px">
+        [
+        <div id="footer-dot" class="bg-black rounded-full w-3 h-3"></div>
+        ]
+    </div>
+    <div id="footer-text-container" class="absolute top-1/2 left-1/2 transition-[top] duration-[1000ms] -translate-x-1/2 -translate-y-1/2 flex flex-row items-center justify-center gap-px">
+        <div id="footer-text"
+             class="w-fit text-xl text-white opacity-0 flex flex-row items-center justify-center gap-px">
+            <div class="relative flex flex-row">
+                <span id="footer-bracket-left" class="absolute left-1/2 top-0 -translate-x-[0.8rem]">[</span>
+                <div id="footer-clip-text" class="relative inline-block clip-text">
+                    <div class="whitespace-nowrap">Vaste is the world</div>
+                </div>
+                <span id="footer-bracket-right" class="absolute left-1/2 top-0 translate-x-[0.2rem]">]</span>
+            </div>
+        </div>
+    </div>
+    <div id="footer-logo" class="flex flex-col gap-0 absolute bottom-0 transition-transform duration-[1000ms] left-1/2 translate-y-full p-5 -translate-x-1/2 w-full">
+        <svg class="w-full h-auto" viewBox="0 0 1400 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1169.32 372.583V7.54639H1400V50.3875H1214.44V164.715H1369.58V207.556H1214.44V329.742H1400V372.583H1169.32Z" fill="white"/>
+            <path d="M979.645 372.583V50.3875H855.177V7.54639H1149.23V50.3875H1024.77V372.583H979.645Z" fill="white"/>
+            <path d="M716.067 380.188C690.211 380.188 666.889 375.794 646.102 367.006C625.484 358.218 608.415 345.712 594.895 329.488C581.545 313.095 572.841 293.745 568.785 271.437L615.429 264.086C621.344 287.069 633.596 305.068 652.186 318.081C670.945 330.925 692.999 337.346 718.349 337.346C734.742 337.346 749.529 334.811 762.711 329.742C776.062 324.503 786.624 317.067 794.398 307.434C802.172 297.801 806.059 286.393 806.059 273.212C806.059 265.1 804.623 258.171 801.75 252.425C799.046 246.51 795.243 241.524 790.342 237.468C785.61 233.243 780.202 229.695 774.118 226.822C768.034 223.949 761.697 221.583 755.106 219.724L662.072 192.092C651.932 189.05 642.131 185.248 632.667 180.685C623.203 175.953 614.753 170.123 607.317 163.194C599.881 156.096 593.966 147.646 589.572 137.844C585.178 127.873 582.981 116.128 582.981 102.608C582.981 80.9759 588.558 62.5551 599.712 47.3452C611.035 31.9663 626.329 20.221 645.595 12.109C664.861 3.99711 686.577 0.0256396 710.744 0.194626C735.249 0.363632 757.134 4.75759 776.4 13.3765C795.835 21.8264 811.889 33.9943 824.564 49.8802C837.408 65.766 846.027 84.7783 850.421 106.917L802.51 115.283C799.975 100.411 794.314 87.6513 785.526 77.0044C776.907 66.1885 766.091 57.9076 753.078 52.1617C740.065 46.2467 725.785 43.2047 710.237 43.0357C695.365 42.8667 681.93 45.2327 669.931 50.1337C657.932 55.0346 648.383 61.8791 641.286 70.667C634.188 79.2859 630.639 89.2568 630.639 100.58C630.639 111.734 633.85 120.775 640.272 127.704C646.693 134.464 654.552 139.872 663.847 143.928C673.311 147.815 682.521 151.026 691.478 153.561L760.936 173.587C768.879 175.784 778.005 178.826 788.314 182.713C798.792 186.6 808.932 192.092 818.734 199.19C828.536 206.119 836.648 215.414 843.07 227.075C849.492 238.567 852.703 253.101 852.703 270.677C852.703 288.252 849.154 303.885 842.056 317.574C835.127 331.263 825.409 342.754 812.903 352.049C800.398 361.175 785.864 368.104 769.302 372.836C752.74 377.737 734.995 380.188 716.067 380.188Z" fill="white"/>
+            <path d="M264.091 372.583L386.277 7.54639H449.145L571.331 372.583H524.433L410.106 33.9101H424.302L310.988 372.583H264.091ZM322.903 287.154V244.82H512.519V287.154H322.903Z" fill="white"/>
+            <path d="M122.186 372.583L0 7.54639H46.8971L153.113 324.672L260.342 7.54639H307.239L185.053 372.583H122.186Z" fill="white"/>
+        </svg>
+        <div class="mt-5 grid grid-cols-6 text-white">
+            <div id="footer-post" class="flex w-fit cursor-pointer flex-row items-center group">
+                [
+                <div class="inline-flex w-full">
+                    Articles
+                </div>
+                ]
+            </div>
+            <div id="footer-magazine" class="flex w-fit cursor-pointer flex-row items-center group">
+                [
+                <div class="inline-flex w-full">
+                    Magazines
+                </div>
+                ]
+            </div>
+            <div id="footer-newsletter"
+                 class="flex w-fit cursor-pointer flex-row items-center group">
+                [
+                <div class="inline-flex w-full">
+                    Newsletter
+                </div>
+                ]
+            </div>
+            <div></div>
+            <div class="flex w-fit cursor-pointer flex-row items-center group">
+                [
+                <div class="inline-flex w-full">
+                    Socials
+                </div>
+                ]
+            </div>
+            <div class="flex w-fit cursor-pointer flex-row items-center group">
+                [
+                <div class="inline-flex w-full">
+                    Contact
+                </div>
+                ]
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
+

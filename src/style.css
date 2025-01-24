@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+    @font-face {
+        font-family: "Manrope";
+        src: url("./fonts/manrope.ttf") format("truetype");
+    }
+
+    body {
+        font-family: "Manrope", serif;
+        @apply text-xl font-semibold;
+    }
+
+    h1, .h1 {
+        @apply text-[10vw] leading-none m-0 p-0;
+    }
+
+    h2, .h2 {
+        @apply text-[2rem] leading-[120%] m-0 p-0;
+    }
+
+    .icon-dot {
+        @apply w-[0.75rem] h-[0.75rem];
+    }
+
+    #clip-transition {
+        clip-path: inset(0 0% 0 0%);
+    }
+}
