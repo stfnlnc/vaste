@@ -1,12 +1,14 @@
 import './style.css'
-import Lenis from "lenis";
-import {gsap} from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {Observer} from "gsap/Observer";
-import {Draggable} from "gsap/Draggable";
-import InertiaPlugin from "gsap/InertiaPlugin";
-
+import './js/image-follow-cursor.js'
 import './js/menu.js'
+import './js/link-hover.js'
+
+import Lenis from "lenis"
+import {gsap} from "gsap"
+import {ScrollTrigger} from "gsap/ScrollTrigger"
+import {Observer} from "gsap/Observer"
+import {Draggable} from "gsap/Draggable"
+import InertiaPlugin from "gsap/InertiaPlugin"
 
 gsap.registerPlugin(ScrollTrigger, Observer)
 window.addEventListener("DOMContentLoaded", () => {

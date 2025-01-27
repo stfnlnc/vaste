@@ -18,9 +18,30 @@
     </svg>
     <div class="w-full h-px bg-gray-200"></div>
     <div class="flex flex-col p-5">
-        <div id="post-menu" class="text-[2.5rem] font-medium tracking-tighter cursor-pointer">[1] Articles</div>
-        <div id="magazine-menu" class="text-[2.5rem] font-medium tracking-tighter cursor-pointer">[2] Magazines</div>
-        <div id="newsletter-menu" class="text-[2.5rem] font-medium tracking-tighter cursor-pointer">[3] Newsletter</div>
+        <div id="post-menu" class="w-fit flex flex-row gap-6 hover:gap-1 transition-[gap] duration-700 text-[2.5rem] font-medium tracking-tighter cursor-pointer group">
+            <div class="flex flex-row gap-1 w-10 relative">
+                <div>[</div>
+                <div>1</div>
+                <div class="absolute left-full top-0 group-hover:left-44 transition-[left] duration-1000 mix-blend-difference invert">]</div>
+            </div>
+            Articles
+        </div>
+        <div id="magazine-menu" class="w-fit flex flex-row gap-6 hover:gap-2 transition-[gap] duration-700 text-[2.5rem] font-medium tracking-tighter cursor-pointer group">
+            <div class="flex flex-row gap-0.5 w-10 relative">
+                <div>[</div>
+                <div>2</div>
+                <div class="absolute left-full top-0 group-hover:left-60 transition-[left] duration-1000 mix-blend-difference invert">]</div>
+            </div>
+            Magazines
+        </div>
+        <div id="newsletter-menu" class="w-fit flex flex-row gap-6 hover:gap-2 transition-[gap] duration-700 text-[2.5rem] font-medium tracking-tighter cursor-pointer group">
+            <div class="flex flex-row gap-0.5 w-10 relative">
+                <div>[</div>
+                <div>3</div>
+                <div class="absolute left-full top-0 group-hover:left-60 transition-[left] duration-1000 mix-blend-difference invert">]</div>
+            </div>
+            Newsletter
+        </div>
     </div>
     <div class="w-full h-px bg-gray-200"></div>
     <div class="p-5">
@@ -84,7 +105,10 @@
         <div id="menu-button" class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px group px-5">
             [
             <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out">
-                Menu
+                <div class="relative">
+                    <div id="menu-open" class="transition-transform duration-500">Menu</div>
+                    <div id="menu-close" class="absolute top-0 left-0 translate-y-full transition-transform duration-500">Close</div>
+                </div>
                 <span class="pl-1"></span>
             </div>
             <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -119,12 +143,18 @@
         <div class="py-96"></div>
         <div class="relative z-20 py-96 col-span-5 flex flex-row items-start pl-4">
             <div class="absolute left-[16.6vw] pl-4 pt-2 text-2xl">[About]</div>
-            <div class="indent-[25vw]">
+            <div class="indent-[25vw] relative">
+                <img id="hover-image" class="z-40 aspect-3/4 w-96 object-center object-cover fixed top-0 left-0 opacity-0 transition-opacity duration-500 pointer-events-none" src="/src/images/on-horseback-accross-continents.avif" alt="">
                 <div class="text-5xl font-medium leading-[120%] pr-5">
-                    Through inspiring [1] <span class="show-picture underline">articles</span>,
-                    immersive [2] <span class="show-picture underline">magazines</span>,
-                    and a thoughtfully curated [3] <span
-                    class="show-picture underline">newsletter</span>, Vaste connects adventure
+                    Through inspiring [1]
+                    <span id="image-post" class="relative underline cursor-pointer">
+                        articles
+                    </span>,
+                    immersive [2]
+                    <span id="image-magazine" class="underline cursor-pointer">magazines</span>,
+                    and a thoughtfully curated [3]
+                    <span id="image-newsletter" class="underline cursor-pointer">newsletter</span>
+                    , Vaste connects adventure
                     seekers and nature
                     lovers with stories that spark exploration and authenticity.
                 </div>
@@ -189,7 +219,14 @@
                 land come together, inviting adventurers to discover the soul of this stunning
                 corner of France—one step at a time.
             </p>
-            <a href="" class="text-xl">[Read More]</a>
+            <a href="" class="link flex flex-row gap-px overflow-hidden">
+                [
+                <div class="text-xl relative">
+                    <div class="link-up transition-transform duration-500">Read More</div>
+                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Read More</div>
+                </div>
+                ]
+            </a>
         </div>
     </section>
     <section class="post-section relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
@@ -228,7 +265,14 @@
                 stars, and how traveling by van changed their perspective on what it means to truly
                 be "home."
             </p>
-            <a href="" class="text-xl">[Read More]</a>
+            <a href="" class="link flex flex-row gap-px overflow-hidden">
+                [
+                <div class="text-xl relative">
+                    <div class="link-up transition-transform duration-500">Read More</div>
+                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Read More</div>
+                </div>
+                ]
+            </a>
         </div>
     </section>
     <section class="relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
@@ -351,9 +395,15 @@
             <div class=""></div>
         </div>
         <div class="relative top-0 left-0 h-[100lvh] w-full col-span-6">
-            <img class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto object-cover object-center rotate-12" src="/src/images/magazine/volume-1.avif" alt="">
-            <img class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto object-cover object-center -rotate-12" src="/src/images/magazine/volume-2.avif" alt="">
-            <img class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto object-cover object-center -rotate-6" src="/src/images/magazine/volume-3.avif" alt="">
+            <div class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto rotate-12 ease-[cubic-bezier(.17,.67,.38,1.23)]">
+                <img class="border border-black w-full h-auto object-cover object-center" src="/src/images/magazine/volume-1.avif" alt="">
+            </div>
+            <div class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto -rotate-12 ease-[cubic-bezier(.17,.67,.38,1.23)]">
+                <img class="border border-black w-full h-auto object-cover object-center" src="/src/images/magazine/volume-2.avif" alt="">
+            </div>
+            <div class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto -rotate-6 ease-[cubic-bezier(.17,.67,.38,1.23)]">
+                <img class="border border-black w-full h-auto object-cover object-center" src="/src/images/magazine/volume-3.avif" alt="">
+            </div>
         </div>
     </section>
     <section id="cover" class="w-full h-[130lvh]">
