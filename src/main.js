@@ -53,8 +53,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const postLink = document.getElementById('post-link')
     const postMenu = document.getElementById('post-menu')
     const postFooter = document.getElementById('footer-post')
+    const postImage = document.getElementById('image-post')
     const postContainer = document.getElementById('post-container')
-    const postLinks = [postLink, postMenu, postFooter]
+    const postLinks = [postLink, postMenu, postFooter, postImage]
 
     postLinks.forEach((link) => {
         link.addEventListener('click', () => {
@@ -65,8 +66,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const magazineLink = document.getElementById('magazine-link')
     const magazineMenu = document.getElementById('magazine-menu')
     const magazineFooter = document.getElementById('footer-magazine')
+    const magazineImage = document.getElementById('image-magazine')
     const magazineContainer = document.getElementById('magazine-container')
-    const magazineLinks = [magazineLink, magazineMenu, magazineFooter]
+    const magazineLinks = [magazineLink, magazineMenu, magazineFooter, magazineImage]
 
     magazineLinks.forEach((link) => {
         link.addEventListener('click', () => {
@@ -77,8 +79,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const newsletterLink = document.getElementById('newsletter-link')
     const newsletterMenu = document.getElementById('newsletter-menu')
     const newsletterFooter = document.getElementById('footer-newsletter')
+    const newsletterImage = document.getElementById('image-newsletter')
     const newsletterContainer = document.getElementById('newsletter-container')
-    const newsletterLinks = [newsletterLink, newsletterMenu, newsletterFooter]
+    const newsletterLinks = [newsletterLink, newsletterMenu, newsletterFooter, newsletterImage]
 
     newsletterLinks.forEach((link) => {
         link.addEventListener('click', () => {

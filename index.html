@@ -127,8 +127,15 @@
         <img class="w-full h-full object-cover object-center" src="/src/images/hero.avif" alt="">
         <div class="absolute top-0 left-0 bg-gradient-to-t from-black opacity-40 h-full w-full"></div>
         <div class="flex flex-row items-start justify-start gap-11 absolute left-5 bottom-6 text-white">
-            <div>[Read]</div>
-            <div class="h2">The Healing Power of <br> Hiking Alone</div>
+            <a href="" class="link flex flex-row gap-px overflow-hidden">
+                [
+                <div class="text-xl relative">
+                    <div class="link-up transition-transform duration-500">Read</div>
+                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Read</div>
+                </div>
+                ]
+            </a>
+            <a href="" class="h2">The Healing Power of <br> Hiking Alone</a>
         </div>
     </section>
     <section class="relative w-full grid grid-cols-6 border-b border-gray-200">
@@ -144,7 +151,10 @@
         <div class="relative z-20 py-96 col-span-5 flex flex-row items-start pl-4">
             <div class="absolute left-[16.6vw] pl-4 pt-2 text-2xl">[About]</div>
             <div class="indent-[25vw] relative">
-                <img id="hover-image" class="z-40 aspect-3/4 w-96 object-center object-cover fixed top-0 left-0 opacity-0 transition-opacity duration-500 pointer-events-none" src="/src/images/on-horseback-accross-continents.avif" alt="">
+                <div id="hover-container" class=" w-96 z-40 fixed top-0 left-0 opacity-0 transition-opacity duration-500 pointer-events-none">
+                    <img id="hover-image" class="w-full h-auto object-center object-cover" src="/src/images/on-horseback-accross-continents.avif" alt="">
+                    <div id="hover-title" class="text-white indent-0 font-medium text-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">[Read articles]</div>
+                </div>
                 <div class="text-5xl font-medium leading-[120%] pr-5">
                     Through inspiring [1]
                     <span id="image-post" class="relative underline cursor-pointer">
@@ -175,13 +185,17 @@
                 Articles
             </div>
             <div class="flex flex-row items-center">
-                [
-                <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg"
-                     width="12" height="12" viewBox="0 0 12 12"
-                     fill="none">
-                    <circle cx="6" cy="6" r="6"/>
-                </svg>
-                ]
+                <div class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px group px-5">
+                    [
+                    <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out whitespace-nowrap">
+                        Read our last articles
+                        <span class="pl-1"></span>
+                    </div>
+                    <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <circle cx="6" cy="6" r="6"/>
+                    </svg>
+                    ]
+                </div>
             </div>
         </div>
     </section>
@@ -196,11 +210,50 @@
         </div>
         <div class="post-infos relative z-0 flex flex-col items-start justify-between col-span-2 p-5">
             <h2>
-                Exploring Brittany on Foot: A Journey Through Wild Coasts and Ancient Forests
+                The Healing Power of Hiking Alone
             </h2>
             <p class="text-xl">
                 [12.01.25] <br>
                 [Harper Woods]
+            </p>
+        </div>
+        <div class="relative z-0 flex flex-col items-start justify-start gap-10 col-span-4 p-5">
+            <img class="post-image w-full object-center object-cover"
+                 src="/src/images/the-healing-power-of-hiking-alone.avif" alt="">
+        </div>
+        <div class="col-span-2"></div>
+        <div class="post-paragraph relative z-0 flex flex-col items-start justify-start gap-10 col-span-3 p-5">
+            <p class="text-xl">
+                There’s something incredibly freeing about hiking alone. Away from the noise of everyday life, the trail offers a space for reflection, clarity, and self-connection.
+                <br><br>
+                With nothing but your footsteps and the sound of nature, solo hiking can be a deeply transformative experience. In this article, we explore how hiking alone allows us to reconnect with ourselves and the natural world in ways that group hikes or busy trails cannot.
+            </p>
+            <a href="" class="link flex flex-row gap-px overflow-hidden">
+                [
+                <div class="text-xl relative">
+                    <div class="link-up transition-transform duration-500">Read More</div>
+                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Read More</div>
+                </div>
+                ]
+            </a>
+        </div>
+    </section>
+    <section class="post-section relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
+        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <div class="post-infos relative z-0 flex flex-col items-start justify-between col-span-2 p-5">
+            <h2>
+                Exploring Brittany on Foot: A Journey Through Wild Coasts and Ancient Forests
+            </h2>
+            <p class="text-xl">
+                [12.10.24] <br>
+                [Elliot Rivers]
             </p>
         </div>
         <div class="relative z-0 flex flex-col items-start justify-start gap-10 col-span-4 p-5">
@@ -286,7 +339,7 @@
         </div>
         <div id="post-drag-container" class="relative flex w-full flex-row col-span-6 z-10 overflow-hidden pb-52">
             <div id="post-wrapper" class="inline-flex">
-                <a href="" class="post shrink-0 w-[50rem] h-auto p-5 flex flex-col gap-5">
+                <a href="" class="post shrink-0 w-[50vw] h-auto p-5 flex flex-col gap-5">
                     <img class="aspect-video w-full h-auto object-center object-cover"
                          src="/src/images/travelling-with-kids.avif" alt="">
                     <div class="h2 w-2/3">
@@ -297,10 +350,10 @@
                         [Mia Landers]
                     </p>
                 </a>
-                <a href="" class="post shrink-0 w-[40rem] h-auto p-5 flex flex-col gap-5">
+                <a href="" class="post shrink-0 w-[33vw] h-auto p-5 flex flex-col gap-5">
                     <img class="aspect-square w-full h-auto object-center object-cover"
                          src="/src/images/hiking-the-pyrenees.avif" alt="">
-                    <div class="h2 w-2/3">
+                    <div class="h2 w-full">
                         Hiking the Pyrenees: A Journey Through Mountains and Valleys
                     </div>
                     <p class="text-xl">
@@ -308,7 +361,7 @@
                         [Rowan Blake]
                     </p>
                 </a>
-                <a href="" class="post shrink-0 w-[50rem] h-auto p-5 flex flex-col gap-5">
+                <a href="" class="post shrink-0 w-[50vw] h-auto p-5 flex flex-col gap-5">
                     <img class="aspect-video w-full h-auto object-center object-cover"
                          src="/src/images/on-horseback-accross-continents.avif" alt="">
                     <div class="h2 w-2/3">
@@ -319,10 +372,10 @@
                         [Harper Woods]
                     </p>
                 </a>
-                <a href="" class="post shrink-0 w-[40rem] h-auto p-5 flex flex-col gap-5">
+                <a href="" class="post shrink-0 w-[33vw] h-auto p-5 flex flex-col gap-5">
                     <img class="aspect-square w-full h-auto object-center object-cover"
                          src="/src/images/the-power-of-running.avif" alt="">
-                    <div class="h2 w-2/3">
+                    <div class="h2 w-full">
                         The Power of Running: How a Simple Sport Transformed My Life
                     </div>
                     <p class="text-xl">
@@ -330,7 +383,7 @@
                         [Elliot Rivers]
                     </p>
                 </a>
-                <a href="" class="post shrink-0 w-[50rem] h-auto p-5 flex flex-col gap-5">
+                <a href="" class="post shrink-0 w-[50vw] h-auto p-5 flex flex-col gap-5">
                     <img class="aspect-video w-full h-auto object-center object-cover"
                          src="/src/images/the-world-s-most-beautiful-hikes.avif" alt="">
                     <div class="h2 w-2/3">
@@ -375,13 +428,17 @@
                 Magazines
             </div>
             <div class="flex flex-row items-center">
-                [
-                <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg"
-                     width="12" height="12" viewBox="0 0 12 12"
-                     fill="none">
-                    <circle cx="6" cy="6" r="6"/>
-                </svg>
-                ]
+                <div class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px group px-5">
+                    [
+                    <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out whitespace-nowrap">
+                        Discover our best magazines
+                        <span class="pl-1"></span>
+                    </div>
+                    <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <circle cx="6" cy="6" r="6"/>
+                    </svg>
+                    ]
+                </div>
             </div>
         </div>
     </section>
@@ -396,13 +453,13 @@
         </div>
         <div class="relative top-0 left-0 h-[100lvh] w-full col-span-6">
             <div class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto rotate-12 ease-[cubic-bezier(.17,.67,.38,1.23)]">
-                <img class="border border-black w-full h-auto object-cover object-center" src="/src/images/magazine/volume-1.avif" alt="">
+                <img class="border border-gray-200 w-full h-auto object-cover object-center" src="/src/images/magazine/volume-1.avif" alt="">
             </div>
             <div class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto -rotate-12 ease-[cubic-bezier(.17,.67,.38,1.23)]">
-                <img class="border border-black w-full h-auto object-cover object-center" src="/src/images/magazine/volume-2.avif" alt="">
+                <img class="border border-gray-200 w-full h-auto object-cover object-center" src="/src/images/magazine/volume-2.avif" alt="">
             </div>
             <div class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto -rotate-6 ease-[cubic-bezier(.17,.67,.38,1.23)]">
-                <img class="border border-black w-full h-auto object-cover object-center" src="/src/images/magazine/volume-3.avif" alt="">
+                <img class="border border-gray-200 w-full h-auto object-cover object-center" src="/src/images/magazine/volume-3.avif" alt="">
             </div>
         </div>
     </section>
@@ -423,13 +480,17 @@
                 Newsletter
             </div>
             <div class="flex flex-row items-center">
-                [
-                <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg"
-                     width="12" height="12" viewBox="0 0 12 12"
-                     fill="none">
-                    <circle cx="6" cy="6" r="6"/>
-                </svg>
-                ]
+                <div class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px group px-5">
+                    [
+                    <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out whitespace-nowrap">
+                        Join our community
+                        <span class="pl-1"></span>
+                    </div>
+                    <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <circle cx="6" cy="6" r="6"/>
+                    </svg>
+                    ]
+                </div>
             </div>
         </div>
     </section>
@@ -454,7 +515,7 @@
             </div>
             <div class="flex flex-row gap-1 mt-8">
                 <label for="email">
-                    <input class="w-fit bg-transparent focus:outline-transparent" id="email"
+                    <input disabled class="w-fit bg-transparent focus:outline-transparent" id="email"
                            name="email" type="email"
                            placeholder="[Enter your email]">
                 </label>
@@ -480,7 +541,7 @@
     <div id="footer-text-container" class="absolute top-1/2 left-1/2 transition-[top] duration-[1000ms] -translate-x-1/2 -translate-y-1/2 flex flex-row items-center justify-center gap-px">
         <div id="footer-text"
              class="w-fit text-xl text-white opacity-0 flex flex-row items-center justify-center gap-px">
-            <div class="relative flex flex-row">
+            <div class="relative flex flex-row mt-5">
                 <span id="footer-bracket-left" class="absolute left-1/2 top-0 -translate-x-[0.8rem]">[</span>
                 <div id="footer-clip-text" class="relative inline-block clip-text">
                     <div class="whitespace-nowrap">Vaste is the world</div>
@@ -498,43 +559,47 @@
             <path d="M122.186 372.583L0 7.54639H46.8971L153.113 324.672L260.342 7.54639H307.239L185.053 372.583H122.186Z" fill="white"/>
         </svg>
         <div class="mt-5 grid grid-cols-6 text-white">
-            <div id="footer-post" class="flex w-fit cursor-pointer flex-row items-center group">
+            <div id="footer-post" class="link flex flex-row gap-px overflow-hidden cursor-pointer">
                 [
-                <div class="inline-flex w-full">
-                    Articles
+                <div class="text-xl relative">
+                    <div class="link-up transition-transform duration-500">Articles</div>
+                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Articles</div>
                 </div>
                 ]
             </div>
-            <div id="footer-magazine" class="flex w-fit cursor-pointer flex-row items-center group">
+            <div id="footer-magazine" class="link flex flex-row gap-px overflow-hidden cursor-pointer">
                 [
-                <div class="inline-flex w-full">
-                    Magazines
+                <div class="text-xl relative">
+                    <div class="link-up transition-transform duration-500">Magazines</div>
+                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Magazines</div>
                 </div>
                 ]
             </div>
-            <div id="footer-newsletter"
-                 class="flex w-fit cursor-pointer flex-row items-center group">
+            <div id="footer-newsletter" class="link flex flex-row gap-px overflow-hidden cursor-pointer">
                 [
-                <div class="inline-flex w-full">
-                    Newsletter
+                <div class="text-xl relative">
+                    <div class="link-up transition-transform duration-500">Newsletter</div>
+                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Newsletter</div>
                 </div>
                 ]
             </div>
             <div></div>
-            <div class="flex w-fit cursor-pointer flex-row items-center group">
+            <a href="" class="link flex flex-row gap-px overflow-hidden">
                 [
-                <div class="inline-flex w-full">
-                    Socials
+                <div class="text-xl relative">
+                    <div class="link-up transition-transform duration-500">Socials</div>
+                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Socials</div>
                 </div>
                 ]
-            </div>
-            <div class="flex w-fit cursor-pointer flex-row items-center group">
+            </a>
+            <a href="" class="link flex flex-row gap-px overflow-hidden">
                 [
-                <div class="inline-flex w-full">
-                    Contact
+                <div class="text-xl relative">
+                    <div class="link-up transition-transform duration-500">Contact</div>
+                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Contact</div>
                 </div>
                 ]
-            </div>
+            </a>
         </div>
     </div>
 </footer>
