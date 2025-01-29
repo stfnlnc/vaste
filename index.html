@@ -8,91 +8,91 @@
     <meta name="description" content="Through inspiring articles, immersive magazines, and a thoughtfully curated newsletter, Vaste connects adventure seekers and nature lovers with stories that spark exploration and authenticity.">
 </head>
 <body>
-<div id="menu" class="fixed top-0 right-0 w-1/2 h-[100lvh] bg-white flex flex-col translate-x-full transition-transform duration-700 z-50">
-    <svg class="w-full fill-black mt-16 p-5" viewBox="0 0 1400 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div id="menu" class="fixed top-0 right-0 z-50 flex w-full translate-x-full flex-col bg-white transition-transform duration-700 h-[100lvh] md:w-1/2">
+    <svg class="mt-16 w-full fill-black p-4 md:p-5" viewBox="0 0 1400 381" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1169.32 372.583V7.54639H1400V50.3875H1214.44V164.715H1369.58V207.556H1214.44V329.742H1400V372.583H1169.32Z"/>
         <path d="M979.645 372.583V50.3875H855.177V7.54639H1149.23V50.3875H1024.77V372.583H979.645Z"/>
         <path d="M716.067 380.188C690.211 380.188 666.889 375.794 646.102 367.006C625.484 358.218 608.415 345.712 594.895 329.488C581.545 313.095 572.841 293.745 568.785 271.437L615.429 264.086C621.344 287.069 633.596 305.068 652.186 318.081C670.945 330.925 692.999 337.346 718.349 337.346C734.742 337.346 749.529 334.811 762.711 329.742C776.062 324.503 786.624 317.067 794.398 307.434C802.172 297.801 806.059 286.393 806.059 273.212C806.059 265.1 804.623 258.171 801.75 252.425C799.046 246.51 795.243 241.524 790.342 237.468C785.61 233.243 780.202 229.695 774.118 226.822C768.034 223.949 761.697 221.583 755.106 219.724L662.072 192.092C651.932 189.05 642.131 185.248 632.667 180.685C623.203 175.953 614.753 170.123 607.317 163.194C599.881 156.096 593.966 147.646 589.572 137.844C585.178 127.873 582.981 116.128 582.981 102.608C582.981 80.9759 588.558 62.5551 599.712 47.3452C611.035 31.9663 626.329 20.221 645.595 12.109C664.861 3.99711 686.577 0.0256396 710.744 0.194626C735.249 0.363632 757.134 4.75759 776.4 13.3765C795.835 21.8264 811.889 33.9943 824.564 49.8802C837.408 65.766 846.027 84.7783 850.421 106.917L802.51 115.283C799.975 100.411 794.314 87.6513 785.526 77.0044C776.907 66.1885 766.091 57.9076 753.078 52.1617C740.065 46.2467 725.785 43.2047 710.237 43.0357C695.365 42.8667 681.93 45.2327 669.931 50.1337C657.932 55.0346 648.383 61.8791 641.286 70.667C634.188 79.2859 630.639 89.2568 630.639 100.58C630.639 111.734 633.85 120.775 640.272 127.704C646.693 134.464 654.552 139.872 663.847 143.928C673.311 147.815 682.521 151.026 691.478 153.561L760.936 173.587C768.879 175.784 778.005 178.826 788.314 182.713C798.792 186.6 808.932 192.092 818.734 199.19C828.536 206.119 836.648 215.414 843.07 227.075C849.492 238.567 852.703 253.101 852.703 270.677C852.703 288.252 849.154 303.885 842.056 317.574C835.127 331.263 825.409 342.754 812.903 352.049C800.398 361.175 785.864 368.104 769.302 372.836C752.74 377.737 734.995 380.188 716.067 380.188Z"/>
         <path d="M264.091 372.583L386.277 7.54639H449.145L571.331 372.583H524.433L410.106 33.9101H424.302L310.988 372.583H264.091ZM322.903 287.154V244.82H512.519V287.154H322.903Z"/>
         <path d="M122.186 372.583L0 7.54639H46.8971L153.113 324.672L260.342 7.54639H307.239L185.053 372.583H122.186Z"/>
     </svg>
-    <div class="w-full h-px bg-gray-200"></div>
-    <div class="flex flex-col p-5">
-        <div id="post-menu" class="w-fit flex flex-row gap-6 hover:gap-1 transition-[gap] duration-700 text-[2.5rem] font-medium tracking-tighter cursor-pointer group">
-            <div class="flex flex-row gap-1 w-10 relative">
+    <div class="h-px w-full bg-neutral-200"></div>
+    <div class="flex flex-col p-4 md:p-5">
+        <div id="post-menu" class="flex w-fit cursor-pointer flex-row gap-6 font-medium tracking-tighter duration-700 transition-[gap] text-[2.5rem] group hover:gap-1">
+            <div class="relative flex w-10 flex-row gap-1">
                 <div>[</div>
                 <div>1</div>
-                <div class="absolute left-full top-0 group-hover:left-44 transition-[left] duration-1000 mix-blend-difference invert">]</div>
+                <div class="absolute top-0 left-full mix-blend-difference invert duration-1000 transition-[left] group-hover:left-44">]</div>
             </div>
             Articles
         </div>
-        <div id="magazine-menu" class="w-fit flex flex-row gap-6 hover:gap-2 transition-[gap] duration-700 text-[2.5rem] font-medium tracking-tighter cursor-pointer group">
-            <div class="flex flex-row gap-0.5 w-10 relative">
+        <div id="magazine-menu" class="-mt-2 flex w-fit cursor-pointer flex-row gap-6 font-medium tracking-tighter duration-700 transition-[gap] text-[2.5rem] group hover:gap-2 md:mt-0">
+            <div class="relative flex w-10 flex-row gap-0.5">
                 <div>[</div>
                 <div>2</div>
-                <div class="absolute left-full top-0 group-hover:left-60 transition-[left] duration-1000 mix-blend-difference invert">]</div>
+                <div class="absolute top-0 left-full mix-blend-difference invert duration-1000 transition-[left] group-hover:left-60">]</div>
             </div>
             Magazines
         </div>
-        <div id="newsletter-menu" class="w-fit flex flex-row gap-6 hover:gap-2 transition-[gap] duration-700 text-[2.5rem] font-medium tracking-tighter cursor-pointer group">
-            <div class="flex flex-row gap-0.5 w-10 relative">
+        <div id="newsletter-menu" class="-mt-2 flex w-fit cursor-pointer flex-row gap-6 font-medium tracking-tighter duration-700 transition-[gap] text-[2.5rem] group hover:gap-2 md:mt-0">
+            <div class="relative flex w-10 flex-row gap-0.5">
                 <div>[</div>
                 <div>3</div>
-                <div class="absolute left-full top-0 group-hover:left-60 transition-[left] duration-1000 mix-blend-difference invert">]</div>
+                <div class="absolute top-0 left-full mix-blend-difference invert duration-1000 transition-[left] group-hover:left-60">]</div>
             </div>
             Newsletter
         </div>
     </div>
-    <div class="w-full h-px bg-gray-200"></div>
+    <div class="h-px w-full bg-neutral-200"></div>
     <div class="p-5">
         <label for="search">
-            <input class="w-fit text-[2.5rem] font-medium tracking-tighter bg-transparent focus:outline-transparent placeholder-gray-200" id="search"
+            <input class="w-fit bg-transparent font-medium tracking-tighter text-[2.5rem] placeholder-neutral-200 focus:outline-transparent" id="search"
                    name="search" type="search"
                    placeholder="[Search]">
         </label>
     </div>
-    <div class="w-full h-px bg-gray-200"></div>
-    <div class="w-full h-px bg-gray-200 mt-auto"></div>
-    <div class="p-5 text-[1.0625rem] font-medium tracking-tighter">Vaste Magazine, Design & Code Studio Khi</div>
+    <div class="h-px w-full bg-neutral-200"></div>
+    <div class="mt-auto h-px w-full bg-neutral-200"></div>
+    <div class="p-5 font-medium tracking-tighter text-[1.0625rem]">Vaste Magazine, Design & Code Studio Khi</div>
 </div>
-<div id="menu-background" class="pointer-events-none fixed top-0 left-0 w-full h-[100lvh] bg-black opacity-0 transition-opacity duration-700 z-40">
+<div id="menu-background" class="pointer-events-none fixed top-0 left-0 z-40 w-full bg-black opacity-0 transition-opacity duration-700 h-[100lvh]">
 
 </div>
 <nav
-    class="relative h-16 w-full z-50 grid grid-cols-6 bg-white border-b border-gray-200 divide-x divide-solid divide-gray-200">
-    <div id="post-link" class="w-full flex flex-row items-center">
-        <div class="w-fit cursor-pointer flex flex-row items-center group px-5 gap-px">
+    class="relative z-50 grid h-16 w-full grid-cols-4 border-y border-neutral-200 bg-white divide-x divide-solid divide-neutral-200 lg:grid-cols-6">
+    <div id="post-link" class="hidden w-full flex-row items-center lg:flex">
+        <div class="flex w-fit cursor-pointer flex-row items-center gap-px px-5 group">
             [
-            <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <svg class="flex-shrink-0 fill-black icon-dot" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <circle cx="6" cy="6" r="6"/>
             </svg>
-            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out">
+            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 ease-in-out transition-[max-width] group-hover:max-w-full">
                 <span class="pl-1"></span>
                 Articles
             </div>
             ]
         </div>
     </div>
-    <div id="magazine-link" class="w-full flex flex-row items-center">
-        <div class="w-fit cursor-pointer flex flex-row items-center group px-5 gap-px">
+    <div id="magazine-link" class="hidden w-full flex-row items-center lg:flex">
+        <div class="flex w-fit cursor-pointer flex-row items-center gap-px px-5 group">
             [
-            <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <svg class="flex-shrink-0 fill-black icon-dot" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <circle cx="6" cy="6" r="6"/>
             </svg>
-            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out">
+            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 ease-in-out transition-[max-width] group-hover:max-w-full">
                 <span class="pl-1"></span>
                 Magazines
             </div>
             ]
         </div>
     </div>
-    <div id="newsletter-link" class="w-full flex flex-row items-center">
-        <div class="w-fit cursor-pointer flex flex-row items-center group px-5 gap-px">
+    <div id="newsletter-link" class="flex w-full flex-row items-center">
+        <div class="hidden w-fit cursor-pointer flex-row items-center gap-px px-5 group lg:flex">
             [
-            <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <svg class="flex-shrink-0 fill-black icon-dot" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <circle cx="6" cy="6" r="6"/>
             </svg>
-            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out">
+            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 ease-in-out transition-[max-width] group-hover:max-w-full">
                 <span class="pl-1"></span>
                 Newsletter
             </div>
@@ -101,17 +101,17 @@
     </div>
     <div class="w-full"></div>
     <div class="w-full"></div>
-    <div class="flex flex-row justify-end w-full">
-        <div id="menu-button" class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px group px-5">
+    <div class="flex w-full flex-row justify-end">
+        <div id="menu-button" class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px px-5 group">
             [
-            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out">
+            <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 ease-in-out transition-[max-width] group-hover:max-w-full">
                 <div class="relative">
                     <div id="menu-open" class="transition-transform duration-500">Menu</div>
                     <div id="menu-close" class="absolute top-0 left-0 translate-y-full transition-transform duration-500">Close</div>
                 </div>
                 <span class="pl-1"></span>
             </div>
-            <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <svg class="flex-shrink-0 fill-black icon-dot" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <circle cx="6" cy="6" r="6"/>
             </svg>
             ]
@@ -119,51 +119,53 @@
     </div>
 </nav>
 <main class="relative flex flex-col">
-    <section id="site-title" class="w-full z-30 grid grid-cols-6 bg-white divide-x divide-solid divide-gray-200 border-b border-gray-200 uppercase">
-        <div class="flex flex-row items-center justify-start col-span-2 h1 p-5">Vaste</div>
-        <div class="flex flex-row items-center justify-end col-span-4 h1 p-5">Magazine</div>
+    <section id="site-title" class="z-30 grid w-full grid-cols-1 border-b border-neutral-200 bg-white uppercase divide-y divide-solid divide-neutral-200 md:divide-y-0 md:divide-x md:grid-cols-6">
+        <div class="flex flex-row items-center justify-start px-4 h1 md:col-span-2 md:p-5">Vaste</div>
+        <div class="flex flex-row items-center px-4 h1 md:col-span-4 md:justify-end md:p-5">Magazine</div>
     </section>
     <section id="hero-section" class="relative w-full min-h-[600px]">
-        <img class="w-full h-full object-cover object-center" src="/src/images/hero.avif" alt="">
-        <div class="absolute top-0 left-0 bg-gradient-to-t from-black opacity-40 h-full w-full"></div>
-        <div class="flex flex-row items-start justify-start gap-11 absolute left-5 bottom-6 text-white">
-            <a href="" class="link flex flex-row gap-px overflow-hidden">
+        <img loading="lazy" class="h-full w-full object-cover object-center" src="/src/images/hero.avif" alt="">
+        <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-t from-black opacity-40"></div>
+        <div class="absolute bottom-0 left-0 flex flex-col items-start justify-start gap-2 p-4 text-white sm:flex-row md:gap-11 lg:p-5">
+            <a href="" class="flex flex-row gap-px overflow-hidden link">
                 [
-                <div class="text-xl relative">
-                    <div class="link-up transition-transform duration-500">Read</div>
-                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Read</div>
+                <div class="relative text-xl">
+                    <div class="transition-transform duration-500 link-up">Read</div>
+                    <div class="absolute top-0 left-0 translate-y-full transition-transform duration-500 link-down">Read</div>
                 </div>
                 ]
             </a>
-            <a href="" class="h2">The Healing Power of <br> Hiking Alone</a>
+            <a href="" class="w-full h2 sm:w-1/2 lg:w-[16.7vw]">The Healing Power of Hiking Alone</a>
         </div>
     </section>
-    <section class="relative w-full grid grid-cols-6 border-b border-gray-200">
-        <div class="absolute top-0 left-0 z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+    <section class="relative flex w-full overflow-hidden border-b border-neutral-200 lg:grid lg:grid-cols-6">
+        <div class="absolute top-0 left-0 z-10 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
             <div class="py-96"></div>
             <div class="py-96"></div>
             <div class="py-96"></div>
             <div class="py-96"></div>
-            <div class="py-96"></div>
-            <div class="py-96"></div>
+            <div class="hidden py-96 lg:block"></div>
+            <div class="hidden py-96 lg:block"></div>
         </div>
         <div class="py-96"></div>
-        <div class="relative z-20 py-96 col-span-5 flex flex-row items-start pl-4">
-            <div class="absolute left-[16.6vw] pl-4 pt-2 text-2xl">[About]</div>
-            <div class="indent-[25vw] relative">
-                <div id="hover-container" class=" w-96 z-40 fixed top-0 left-0 opacity-0 transition-opacity duration-500 pointer-events-none">
-                    <img id="hover-image" class="w-full h-auto object-center object-cover" src="/src/images/on-horseback-accross-continents.avif" alt="">
-                    <div id="hover-title" class="text-white indent-0 font-medium text-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">[Read articles]</div>
+        <div class="relative z-20 flex flex-col items-center py-56 md:flex-row md:items-start md:py-96 md:pl-4 lg:col-span-5">
+            <div class="mb-8 text-xl md:left-[16.6vw] md:absolute md:mb-0 md:pt-2 md:pl-4 xl:text-2xl">[About]</div>
+            <div class="relative">
+                <div id="hover-container" class="pointer-events-none fixed top-0 left-0 z-40 hidden w-96 h-fit border border-neutral-200 opacity-0 transition-opacity duration-500 md:block">
+                    <img loading="lazy" id="hover-image-post" class="hidden h-auto w-96 object-cover object-center" src="/src/images/on-horseback-accross-continents.avif" alt="">
+                    <img loading="lazy" id="hover-image-magazine" class="hidden h-auto w-96 object-cover object-center" src="/src/images/magazine/volume-5.avif" alt="">
+                    <img loading="lazy" id="hover-image-newsletter" class="hidden h-auto w-96 object-cover object-center" src="/src/images/cover.avif" alt="">
+                    <div id="hover-title" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 indent-0 text-lg font-medium text-white">[Read articles]</div>
                 </div>
-                <div class="text-5xl font-medium leading-[120%] pr-5">
+                <div class="p-4 text-center text-4xl font-medium md:indent-[30vw] md:pr-5 md:text-left lg:leading-[130%] xl:indent-[25vw] xl:leading-[120%] xl:text-5xl">
                     Through inspiring [1]
-                    <span id="image-post" class="relative underline cursor-pointer">
+                    <span id="image-post" class="relative cursor-pointer underline">
                         articles
                     </span>,
                     immersive [2]
-                    <span id="image-magazine" class="underline cursor-pointer">magazines</span>,
+                    <span id="image-magazine" class="cursor-pointer underline">magazines</span>,
                     and a thoughtfully curated [3]
-                    <span id="image-newsletter" class="underline cursor-pointer">newsletter</span>
+                    <span id="image-newsletter" class="cursor-pointer underline">newsletter</span>
                     , Vaste connects adventure
                     seekers and nature
                     lovers with stories that spark exploration and authenticity.
@@ -171,97 +173,84 @@
             </div>
         </div>
     </section>
-    <section id="post-title" class="z-30 relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
-        <div class="absolute top-0 left-0 z-20 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+    <section id="post-title" class="relative z-30 grid w-full grid-cols-6 overflow-hidden border-b border-neutral-200 bg-white">
+        <div class="absolute top-0 left-0 z-20 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
+            <div class="py-96"></div>
+            <div class="py-96"></div>
+            <div class="py-96"></div>
+            <div class="py-96"></div>
+            <div class="hidden py-96 lg:block"></div>
+            <div class="hidden py-96 lg:block"></div>
         </div>
-        <div class="relative z-20 flex flex-row items-end justify-between col-span-6 p-5">
-            <div class="h1 self-center">
+        <div class="relative z-20 col-span-6 flex flex-row items-end justify-between px-4 py-2 md:p-5">
+            <div class="self-center h1">
                 Articles
-            </div>
-            <div class="flex flex-row items-center">
-                <div class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px group px-5">
-                    [
-                    <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out whitespace-nowrap">
-                        Read our last articles
-                        <span class="pl-1"></span>
-                    </div>
-                    <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                        <circle cx="6" cy="6" r="6"/>
-                    </svg>
-                    ]
-                </div>
             </div>
         </div>
     </section>
-    <section id="post-container" class="post-section relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
-        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+    <section id="post-container" class="relative flex w-full flex-col border-b border-neutral-200 bg-white post-section lg:grid lg:grid-cols-6">
+        <div class="absolute top-0 left-0 z-0 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="hidden lg:block"></div>
+            <div class="hidden lg:block"></div>
         </div>
-        <div class="post-infos relative z-0 flex flex-col items-start justify-between col-span-2 p-5">
+        <div class="relative z-0 col-span-2 flex flex-col items-start p-4 post-infos md:p-5 lg:justify-between">
             <h2>
                 The Healing Power of Hiking Alone
             </h2>
-            <p class="text-xl">
+            <p class="mt-4 text-xl">
                 [12.01.25] <br>
                 [Harper Woods]
             </p>
         </div>
-        <div class="relative z-0 flex flex-col items-start justify-start gap-10 col-span-4 p-5">
-            <img class="post-image w-full object-center object-cover"
+        <div class="relative z-0 col-span-4 flex flex-col items-start justify-start gap-10 p-4 md:p-5">
+            <img loading="lazy" class="aspect-square w-full object-cover object-center post-image"
                  src="/src/images/the-healing-power-of-hiking-alone.avif" alt="">
         </div>
         <div class="col-span-2"></div>
-        <div class="post-paragraph relative z-0 flex flex-col items-start justify-start gap-10 col-span-3 p-5">
+        <div class="relative z-0 col-span-3 flex flex-col items-start justify-start gap-10 px-4 pt-4 pb-56 post-paragraph md:p-5">
             <p class="text-xl">
                 There’s something incredibly freeing about hiking alone. Away from the noise of everyday life, the trail offers a space for reflection, clarity, and self-connection.
                 <br><br>
                 With nothing but your footsteps and the sound of nature, solo hiking can be a deeply transformative experience. In this article, we explore how hiking alone allows us to reconnect with ourselves and the natural world in ways that group hikes or busy trails cannot.
             </p>
-            <a href="" class="link flex flex-row gap-px overflow-hidden">
+            <a href="" class="flex flex-row gap-px overflow-hidden link">
                 [
-                <div class="text-xl relative">
-                    <div class="link-up transition-transform duration-500">Read More</div>
-                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Read More</div>
+                <div class="relative text-xl">
+                    <div class="transition-transform duration-500 link-up">Read More</div>
+                    <div class="absolute top-0 left-0 translate-y-full transition-transform duration-500 link-down">Read More</div>
                 </div>
                 ]
             </a>
         </div>
     </section>
-    <section class="post-section relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
-        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+    <section class="relative flex w-full flex-col border-b border-neutral-200 bg-white post-section lg:grid lg:grid-cols-6">
+        <div class="absolute top-0 left-0 z-0 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="hidden lg:block"></div>
+            <div class="hidden lg:block"></div>
         </div>
-        <div class="post-infos relative z-0 flex flex-col items-start justify-between col-span-2 p-5">
+        <div class="relative z-0 col-span-2 flex flex-col items-start p-4 post-infos md:p-5 lg:justify-between">
             <h2>
                 Exploring Brittany on Foot: A Journey Through Wild Coasts and Ancient Forests
             </h2>
-            <p class="text-xl">
+            <p class="mt-4 text-xl">
                 [12.10.24] <br>
                 [Elliot Rivers]
             </p>
         </div>
-        <div class="relative z-0 flex flex-col items-start justify-start gap-10 col-span-4 p-5">
-            <img class="post-image w-full object-center object-cover"
+        <div class="relative z-0 col-span-4 flex flex-col items-start justify-start gap-10 p-4 md:p-5">
+            <img loading="lazy" class="aspect-square w-full object-cover object-center post-image"
                  src="/src/images/exploring-brittany-on-foot.avif" alt="">
         </div>
         <div class="col-span-2"></div>
-        <div class="post-paragraph relative z-0 flex flex-col items-start justify-start gap-10 col-span-3 p-5">
+        <div class="relative z-0 col-span-3 flex flex-col items-start justify-start gap-10 px-4 pt-4 pb-56 post-paragraph md:p-5">
             <p class="text-xl">
                 Brittany, with its rugged coastline and charming villages, is a paradise for hikers.
                 Walking the region’s winding paths, you’ll
@@ -272,40 +261,40 @@
                 land come together, inviting adventurers to discover the soul of this stunning
                 corner of France—one step at a time.
             </p>
-            <a href="" class="link flex flex-row gap-px overflow-hidden">
+            <a href="" class="flex flex-row gap-px overflow-hidden link">
                 [
-                <div class="text-xl relative">
-                    <div class="link-up transition-transform duration-500">Read More</div>
-                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Read More</div>
+                <div class="relative text-xl">
+                    <div class="transition-transform duration-500 link-up">Read More</div>
+                    <div class="absolute top-0 left-0 translate-y-full transition-transform duration-500 link-down">Read More</div>
                 </div>
                 ]
             </a>
         </div>
     </section>
-    <section class="post-section relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
-        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+    <section class="relative flex w-full flex-col border-b border-neutral-200 bg-white post-section lg:grid lg:grid-cols-6">
+        <div class="absolute top-0 left-0 z-0 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="hidden lg:block"></div>
+            <div class="hidden lg:block"></div>
         </div>
-        <div class="post-infos relative z-0 flex flex-col items-start justify-between col-span-2 p-5">
+        <div class="relative z-0 col-span-2 flex flex-col items-start p-4 post-infos md:p-5 lg:justify-between">
             <h2>
                 Van Life: A Road Trip Through Europe with Sarah & Jean
             </h2>
-            <p class="text-xl">
+            <p class="mt-4 text-xl">
                 [25.09.24] <br>
                 [Sarah & Jean Chemi]
             </p>
         </div>
-        <div class="relative z-0 flex flex-col items-start justify-start gap-10 col-span-4 p-5">
-            <img class="post-image w-full object-center object-cover"
+        <div class="relative z-0 col-span-4 flex flex-col items-start justify-start gap-10 p-4 md:p-5">
+            <img loading="lazy" class="aspect-square w-full object-cover object-center post-image"
                  src="/src/images/van-life.avif" alt="">
         </div>
         <div class="col-span-2"></div>
-        <div class="post-paragraph relative z-0 flex flex-col items-start justify-start gap-10 col-span-3 p-5">
+        <div class="relative z-0 col-span-3 flex flex-col items-start justify-start gap-10 px-4 pt-4 pb-56 post-paragraph md:p-5">
             <p class="text-xl">
                 Join Sarah and Jean as they embark on the ultimate adventure: a solo van trip across
                 Europe. From the rolling hills of the Scottish
@@ -318,31 +307,36 @@
                 stars, and how traveling by van changed their perspective on what it means to truly
                 be "home."
             </p>
-            <a href="" class="link flex flex-row gap-px overflow-hidden">
+            <a href="" class="flex flex-row gap-px overflow-hidden link">
                 [
-                <div class="text-xl relative">
-                    <div class="link-up transition-transform duration-500">Read More</div>
-                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Read More</div>
+                <div class="relative text-xl">
+                    <div class="transition-transform duration-500 link-up">Read More</div>
+                    <div class="absolute top-0 left-0 translate-y-full transition-transform duration-500 link-down">Read More</div>
                 </div>
                 ]
             </a>
         </div>
     </section>
-    <section class="relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
-        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+    <section class="relative grid w-full grid-cols-6 border-b border-neutral-200 bg-white">
+        <div class="absolute top-0 left-0 z-0 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="hidden lg:block"></div>
+            <div class="hidden lg:block"></div>
         </div>
-        <div id="post-drag-container" class="relative flex w-full flex-row col-span-6 z-10 overflow-hidden pb-52">
+        <div id="post-drag-container" class="relative z-10 col-span-6 flex w-full flex-row overflow-hidden pb-52">
             <div id="post-wrapper" class="inline-flex">
-                <a href="" class="post shrink-0 w-[50vw] h-auto p-5 flex flex-col gap-5">
-                    <img class="aspect-video w-full h-auto object-center object-cover"
-                         src="/src/images/travelling-with-kids.avif" alt="">
-                    <div class="h2 w-2/3">
+                <a href="" class="flex h-auto shrink-0 flex-col gap-5 p-4 post w-[80vw] group md:p-5 lg:w-[50vw]">
+                    <div class="relative">
+                        <img loading="lazy" class="aspect-square h-auto w-full object-cover object-center duration-500 transition-filter group-hover:brightness-80 md:aspect-video"
+                             src="/src/images/travelling-with-kids.avif" alt="">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-medium text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                            [Read]
+                        </div>
+                    </div>
+                    <div class="w-full text-3xl md:h2 md:w-2/3">
                         Traveling with Kids: Adventures on the Road and in Nature
                     </div>
                     <p class="text-xl">
@@ -350,10 +344,15 @@
                         [Mia Landers]
                     </p>
                 </a>
-                <a href="" class="post shrink-0 w-[33vw] h-auto p-5 flex flex-col gap-5">
-                    <img class="aspect-square w-full h-auto object-center object-cover"
-                         src="/src/images/hiking-the-pyrenees.avif" alt="">
-                    <div class="h2 w-full">
+                <a href="" class="flex h-auto shrink-0 flex-col gap-5 p-4 post w-[80vw] group md:p-5 lg:w-[33vw]">
+                    <div class="relative">
+                        <img loading="lazy" class="h-auto w-full object-cover object-center duration-500 aspect-[3/4] transition-filter group-hover:brightness-80 md:aspect-square"
+                             src="/src/images/hiking-the-pyrenees.avif" alt="">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-medium text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                            [Read]
+                        </div>
+                    </div>
+                    <div class="w-full text-3xl md:h2">
                         Hiking the Pyrenees: A Journey Through Mountains and Valleys
                     </div>
                     <p class="text-xl">
@@ -361,10 +360,15 @@
                         [Rowan Blake]
                     </p>
                 </a>
-                <a href="" class="post shrink-0 w-[50vw] h-auto p-5 flex flex-col gap-5">
-                    <img class="aspect-video w-full h-auto object-center object-cover"
-                         src="/src/images/on-horseback-accross-continents.avif" alt="">
-                    <div class="h2 w-2/3">
+                <a href="" class="flex h-auto shrink-0 flex-col gap-5 p-4 post w-[80vw] group md:p-5 lg:w-[50vw]">
+                    <div class="relative">
+                        <img loading="lazy" class="aspect-square h-auto w-full object-cover object-center duration-500 transition-filter group-hover:brightness-80 md:aspect-video"
+                             src="/src/images/on-horseback-accross-continents.avif" alt="">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-medium text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                            [Read]
+                        </div>
+                    </div>
+                    <div class="w-full text-3xl md:h2 md:w-2/3">
                         On Horseback Across Continents: A Conversation with Emma Carter
                     </div>
                     <p class="text-xl">
@@ -372,10 +376,15 @@
                         [Harper Woods]
                     </p>
                 </a>
-                <a href="" class="post shrink-0 w-[33vw] h-auto p-5 flex flex-col gap-5">
-                    <img class="aspect-square w-full h-auto object-center object-cover"
-                         src="/src/images/the-power-of-running.avif" alt="">
-                    <div class="h2 w-full">
+                <a href="" class="flex h-auto shrink-0 flex-col gap-5 p-4 post w-[80vw] group md:p-5 lg:w-[33vw]">
+                    <div class="relative">
+                        <img loading="lazy" class="h-auto w-full object-cover object-center duration-500 aspect-[3/4] transition-filter group-hover:brightness-80 md:aspect-square"
+                             src="/src/images/the-power-of-running.avif" alt="">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-medium text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                            [Read]
+                        </div>
+                    </div>
+                    <div class="w-full text-3xl md:h2">
                         The Power of Running: How a Simple Sport Transformed My Life
                     </div>
                     <p class="text-xl">
@@ -383,10 +392,15 @@
                         [Elliot Rivers]
                     </p>
                 </a>
-                <a href="" class="post shrink-0 w-[50vw] h-auto p-5 flex flex-col gap-5">
-                    <img class="aspect-video w-full h-auto object-center object-cover"
-                         src="/src/images/the-world-s-most-beautiful-hikes.avif" alt="">
-                    <div class="h2 w-2/3">
+                <a href="" class="flex h-auto shrink-0 flex-col gap-5 p-4 post w-[80vw] group md:p-5 lg:w-[50vw]">
+                    <div class="relative">
+                        <img loading="lazy" class="aspect-square h-auto w-full object-cover object-center duration-500 transition-filter group-hover:brightness-80 md:aspect-video"
+                             src="/src/images/the-world-s-most-beautiful-hikes.avif" alt="">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-medium text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                            [Read]
+                        </div>
+                    </div>
+                    <div class="w-full text-3xl md:h2 md:w-2/3">
                         The World’s Most Beautiful Hikes: A Bucket List for Adventurers
                     </div>
                     <p class="text-xl">
@@ -397,123 +411,131 @@
             </div>
         </div>
     </section>
-    <section id="site-transition" class="relative w-full grid grid-cols-6 bg-white border-b border-gray-200 h-[100lvh]">
-        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+    <section id="site-transition" class="relative grid w-full grid-cols-6 border-b border-neutral-200 bg-white h-[100lvh]">
+        <div class="absolute top-0 left-0 z-0 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="hidden lg:block"></div>
+            <div class="hidden lg:block"></div>
         </div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <span id="transition-bracket-left" class="absolute left-0 top-0 -translate-x-full">[</span>
+            <span id="transition-bracket-left" class="absolute top-0 left-0 -translate-x-full">[</span>
             <div id="clip-transition">
                 Adventure
             </div>
-            <span id="transition-bracket-right" class="absolute left-full top-0">]</span>
+            <span id="transition-bracket-right" class="absolute top-0 left-full">]</span>
         </div>
     </section>
-    <section id="magazine-title" class="z-30 relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
-        <div class="absolute top-0 left-0 z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+    <section id="magazine-title" class="relative z-30 grid w-full grid-cols-6 border-b border-neutral-200 bg-white">
+        <div class="absolute top-0 left-0 z-10 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="hidden lg:block"></div>
+            <div class="hidden lg:block"></div>
         </div>
-        <div class="relative z-20 flex flex-row items-end justify-between col-span-6 p-5">
-            <div class="h1 self-center">
+        <div class="relative z-20 col-span-6 flex flex-row items-end justify-between px-4 py-2 md:p-5">
+            <div class="self-center h1">
                 Magazines
             </div>
-            <div class="flex flex-row items-center">
-                <div class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px group px-5">
-                    [
-                    <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out whitespace-nowrap">
-                        Discover our best magazines
-                        <span class="pl-1"></span>
-                    </div>
-                    <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                        <circle cx="6" cy="6" r="6"/>
-                    </svg>
-                    ]
+        </div>
+    </section>
+    <section id="magazine-container" class="relative grid w-full grid-cols-6 overflow-hidden border-b border-neutral-200 bg-white md:h-[100lvh]">
+        <div class="absolute top-0 left-0 z-0 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class="hidden lg:block"></div>
+            <div class="hidden lg:block"></div>
+        </div>
+        <div class="relative top-0 left-0 col-span-6 hidden w-full h-[100lvh] md:block">
+            <div class="magazine group cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-4 md:p-5 h-auto rotate-12 ease-[cubic-bezier(.17,.67,.38,1.23)]">
+                <img loading="lazy" class="h-auto w-full border border-neutral-200 object-cover object-center duration-500 transition-filter group-hover:brightness-70" src="/src/images/magazine/volume-3.avif" alt="">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-medium text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                    [Buy]
+                </div>
+            </div>
+            <div class="magazine group cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-4 md:p-5 h-auto -rotate-12 ease-[cubic-bezier(.17,.67,.38,1.23)]">
+                <img loading="lazy" class="h-auto w-full border border-neutral-200 object-cover object-center duration-500 transition-filter group-hover:brightness-70" src="/src/images/magazine/volume-4.avif" alt="">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-medium text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                    [Buy]
+                </div>
+            </div>
+            <div class="magazine group cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-4 md:p-5 h-auto -rotate-6 ease-[cubic-bezier(.17,.67,.38,1.23)]">
+                <img loading="lazy" class="h-auto w-full border border-neutral-200 object-cover object-center duration-500 transition-filter group-hover:brightness-70" src="/src/images/magazine/volume-5.avif" alt="">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-medium text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                    [Buy]
                 </div>
             </div>
         </div>
-    </section>
-    <section id="magazine-container" class="relative w-full grid grid-cols-6 bg-white border-b border-gray-200 h-[100lvh]">
-        <div class="absolute top-0 left-0 z-0 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-        </div>
-        <div class="relative top-0 left-0 h-[100lvh] w-full col-span-6">
-            <div class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto rotate-12 ease-[cubic-bezier(.17,.67,.38,1.23)]">
-                <img class="border border-gray-200 w-full h-auto object-cover object-center" src="/src/images/magazine/volume-1.avif" alt="">
+        <div id="magazine-drag-container" class="relative z-10 col-span-6 flex w-full flex-row overflow-hidden pb-56 md:hidden">
+            <div id="magazine-wrapper" class="inline-flex">
+                <a href="" class="flex flex-col gap-4 p-4 w-[80vw]">
+                    <img loading="lazy" class="h-auto w-full shrink-0 border border-neutral-200 object-cover object-center" src="/src/images/magazine/volume-3.avif" alt="">
+                    <div class="flex flex-col text-lg">
+                        <div>[Buy latest]</div>
+                        <div>[vol.01]</div>
+                    </div>
+                </a>
+                <a href="" class="flex flex-col gap-4 p-4 w-[80vw]">
+                    <img loading="lazy" class="h-auto w-full shrink-0 border border-neutral-200 object-cover object-center" src="/src/images/magazine/volume-4.avif" alt="">
+                    <div class="flex flex-col text-lg">
+                        <div>[Buy latest]</div>
+                        <div>[vol.01]</div>
+                    </div>
+                </a>
+                <a href="" class="flex flex-col gap-4 p-4 w-[80vw]">
+                    <img loading="lazy" class="h-auto w-full shrink-0 border border-neutral-200 object-cover object-center" src="/src/images/magazine/volume-5.avif" alt="">
+                    <div class="flex flex-col text-lg">
+                        <div>[Buy latest]</div>
+                        <div>[vol.01]</div>
+                    </div>
+                </a>
             </div>
-            <div class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto -rotate-12 ease-[cubic-bezier(.17,.67,.38,1.23)]">
-                <img class="border border-gray-200 w-full h-auto object-cover object-center" src="/src/images/magazine/volume-2.avif" alt="">
-            </div>
-            <div class="magazine absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-[transform, left] duration-1000 w-2/6 p-5 h-auto -rotate-6 ease-[cubic-bezier(.17,.67,.38,1.23)]">
-                <img class="border border-gray-200 w-full h-auto object-cover object-center" src="/src/images/magazine/volume-3.avif" alt="">
-            </div>
         </div>
     </section>
-    <section id="cover" class="w-full h-[130lvh]">
-        <img class="w-full h-full object-center object-cover" src="/src/images/cover.avif" alt="">
+    <section id="cover" class="w-full h-[100lvh] md:h-[130lvh]">
+        <img loading="lazy" class="h-full w-full object-cover object-center" src="/src/images/cover.avif" alt="">
     </section>
-    <section id="newsletter-title" class="z-30 relative w-full grid grid-cols-6 bg-white border-b border-gray-200">
-        <div class="absolute top-0 left-0 z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+    <section id="newsletter-title" class="relative z-30 grid w-full grid-cols-6 border-b border-neutral-200 bg-white">
+        <div class="absolute top-0 left-0 z-10 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="hidden lg:block"></div>
+            <div class="hidden lg:block"></div>
         </div>
-        <div class="relative z-20 flex flex-row items-end justify-between col-span-6 p-5">
-            <div class="h1 self-center">
+        <div class="relative z-20 col-span-6 flex flex-row items-end justify-between px-4 py-2 md:p-5">
+            <div class="self-center h1">
                 Newsletter
             </div>
-            <div class="flex flex-row items-center">
-                <div class="flex w-fit cursor-pointer flex-row items-center justify-end gap-px group px-5">
-                    [
-                    <div class="inline-flex w-full max-w-0 overflow-hidden duration-700 transition-[max-width] group-hover:max-w-full ease-in-out whitespace-nowrap">
-                        Join our community
-                        <span class="pl-1"></span>
-                    </div>
-                    <svg class="icon-dot flex-shrink-0 fill-black" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                        <circle cx="6" cy="6" r="6"/>
-                    </svg>
-                    ]
-                </div>
-            </div>
         </div>
     </section>
-    <section id="newsletter-container" class="relative w-full grid grid-cols-6 border-b border-gray-200">
+    <section id="newsletter-container" class="relative grid w-full grid-cols-6 border-b border-neutral-200">
         <div
-            class="absolute top-0 left-0 -z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+            class="absolute top-0 left-0 -z-10 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
             <div class="pt-16 pb-72"></div>
             <div class="pt-16 pb-72"></div>
             <div class="pt-16 pb-72"></div>
             <div class="pt-16 pb-72"></div>
-            <div class="pt-16 pb-72"></div>
-            <div class="pt-16 pb-72"></div>
+            <div class="hidden pt-16 pb-72 lg:block"></div>
+            <div class="hidden pt-16 pb-72 lg:block"></div>
         </div>
-        <div class="py-72"></div>
-        <div class="py-72"></div>
-        <div class="relative z-0 pt-16 pb-72 col-span-3 flex flex-col items-start p-5">
+        <div class="hidden py-72 lg:block"></div>
+        <div class="hidden py-72 lg:block"></div>
+        <div class="relative z-0 col-span-6 flex flex-col items-start p-4 pt-16 pb-56 md:p-5 lg:col-span-3">
             <div>
                 Stay connected to the outdoors, no matter where you are. Our newsletter delivers
                 fresh inspiration, exclusive content, and the latest
                 from Vaste directly to your inbox—your weekly dose of nature, adventure, and ideas
                 to explore.
             </div>
-            <div class="flex flex-row gap-1 mt-8">
+            <div class="mt-8 flex flex-row gap-1">
                 <label for="email">
                     <input disabled class="w-fit bg-transparent focus:outline-transparent" id="email"
                            name="email" type="email"
@@ -524,79 +546,79 @@
         </div>
     </section>
 </main>
-<footer id="footer" class="relative w-full h-[100lvh] grid grid-cols-6 border-b border-gray-200">
-    <div class="absolute top-0 left-0 -z-10 w-full h-full grid grid-cols-6 divide-x divide-gray-200">
+<footer id="footer" class="relative grid w-full grid-cols-6 border-b border-neutral-200 h-[100lvh]">
+    <div id="footer-grid" class="absolute top-0 left-0 z-10 grid h-full w-full grid-cols-4 divide-x divide-neutral-200 lg:grid-cols-6">
         <div class="pt-16 pb-96"></div>
         <div class="pt-16 pb-96"></div>
         <div class="pt-16 pb-96"></div>
         <div class="pt-16 pb-96"></div>
-        <div class="pt-16 pb-96"></div>
-        <div class="pt-16 pb-96"></div>
+        <div class="hidden pt-16 pb-96 lg:block"></div>
+        <div class="hidden pt-16 pb-96 lg:block"></div>
     </div>
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-row items-center justify-center gap-px">
-        [
-        <div id="footer-dot" class="bg-black rounded-full w-3 h-3"></div>
-        ]
+    <div class="absolute top-1/2 left-1/2 z-20 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-px">
+        <span class="transition-opacity duration-300 footer-bracket-hide">[</span>
+        <div id="footer-dot" class="h-3 w-3 rounded-full bg-black"></div>
+        <span class="transition-opacity duration-300 footer-bracket-hide">]</span>
     </div>
-    <div id="footer-text-container" class="absolute top-1/2 left-1/2 transition-[top] duration-[1000ms] -translate-x-1/2 -translate-y-1/2 flex flex-row items-center justify-center gap-px">
+    <div id="footer-text-container" class="absolute top-1/2 left-1/2 z-30 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-px transition-[top] duration-[1000ms]">
         <div id="footer-text"
-             class="w-fit text-xl text-white opacity-0 flex flex-row items-center justify-center gap-px">
-            <div class="relative flex flex-row mt-5">
-                <span id="footer-bracket-left" class="absolute left-1/2 top-0 -translate-x-[0.8rem]">[</span>
+             class="flex w-fit flex-row items-center justify-center gap-px text-xl text-white opacity-0">
+            <div class="relative mt-5 flex flex-row">
+                <span id="footer-bracket-left" class="absolute top-0 left-1/2 -translate-x-[0.8rem]">[</span>
                 <div id="footer-clip-text" class="relative inline-block clip-text">
                     <div class="whitespace-nowrap">Vaste is the world</div>
                 </div>
-                <span id="footer-bracket-right" class="absolute left-1/2 top-0 translate-x-[0.2rem]">]</span>
+                <span id="footer-bracket-right" class="absolute top-0 left-1/2 translate-x-[0.2rem]">]</span>
             </div>
         </div>
     </div>
-    <div id="footer-logo" class="flex flex-col gap-0 absolute bottom-0 transition-transform duration-[1000ms] left-1/2 translate-y-full p-5 -translate-x-1/2 w-full">
-        <svg class="w-full h-auto" viewBox="0 0 1400 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div id="footer-logo" class="absolute bottom-0 left-1/2 z-30 flex w-full -translate-x-1/2 translate-y-full flex-col gap-0 p-4 transition-transform duration-[1000ms] md:p-5">
+        <svg class="h-auto w-full" viewBox="0 0 1400 381" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1169.32 372.583V7.54639H1400V50.3875H1214.44V164.715H1369.58V207.556H1214.44V329.742H1400V372.583H1169.32Z" fill="white"/>
             <path d="M979.645 372.583V50.3875H855.177V7.54639H1149.23V50.3875H1024.77V372.583H979.645Z" fill="white"/>
             <path d="M716.067 380.188C690.211 380.188 666.889 375.794 646.102 367.006C625.484 358.218 608.415 345.712 594.895 329.488C581.545 313.095 572.841 293.745 568.785 271.437L615.429 264.086C621.344 287.069 633.596 305.068 652.186 318.081C670.945 330.925 692.999 337.346 718.349 337.346C734.742 337.346 749.529 334.811 762.711 329.742C776.062 324.503 786.624 317.067 794.398 307.434C802.172 297.801 806.059 286.393 806.059 273.212C806.059 265.1 804.623 258.171 801.75 252.425C799.046 246.51 795.243 241.524 790.342 237.468C785.61 233.243 780.202 229.695 774.118 226.822C768.034 223.949 761.697 221.583 755.106 219.724L662.072 192.092C651.932 189.05 642.131 185.248 632.667 180.685C623.203 175.953 614.753 170.123 607.317 163.194C599.881 156.096 593.966 147.646 589.572 137.844C585.178 127.873 582.981 116.128 582.981 102.608C582.981 80.9759 588.558 62.5551 599.712 47.3452C611.035 31.9663 626.329 20.221 645.595 12.109C664.861 3.99711 686.577 0.0256396 710.744 0.194626C735.249 0.363632 757.134 4.75759 776.4 13.3765C795.835 21.8264 811.889 33.9943 824.564 49.8802C837.408 65.766 846.027 84.7783 850.421 106.917L802.51 115.283C799.975 100.411 794.314 87.6513 785.526 77.0044C776.907 66.1885 766.091 57.9076 753.078 52.1617C740.065 46.2467 725.785 43.2047 710.237 43.0357C695.365 42.8667 681.93 45.2327 669.931 50.1337C657.932 55.0346 648.383 61.8791 641.286 70.667C634.188 79.2859 630.639 89.2568 630.639 100.58C630.639 111.734 633.85 120.775 640.272 127.704C646.693 134.464 654.552 139.872 663.847 143.928C673.311 147.815 682.521 151.026 691.478 153.561L760.936 173.587C768.879 175.784 778.005 178.826 788.314 182.713C798.792 186.6 808.932 192.092 818.734 199.19C828.536 206.119 836.648 215.414 843.07 227.075C849.492 238.567 852.703 253.101 852.703 270.677C852.703 288.252 849.154 303.885 842.056 317.574C835.127 331.263 825.409 342.754 812.903 352.049C800.398 361.175 785.864 368.104 769.302 372.836C752.74 377.737 734.995 380.188 716.067 380.188Z" fill="white"/>
             <path d="M264.091 372.583L386.277 7.54639H449.145L571.331 372.583H524.433L410.106 33.9101H424.302L310.988 372.583H264.091ZM322.903 287.154V244.82H512.519V287.154H322.903Z" fill="white"/>
             <path d="M122.186 372.583L0 7.54639H46.8971L153.113 324.672L260.342 7.54639H307.239L185.053 372.583H122.186Z" fill="white"/>
         </svg>
-        <div class="mt-5 grid grid-cols-6 text-white">
-            <div id="footer-post" class="link flex flex-row gap-px overflow-hidden cursor-pointer">
+        <div class="mt-5 flex flex-row justify-between text-white md:grid md:grid-cols-6">
+            <div id="footer-post" class="hidden cursor-pointer flex-row gap-px overflow-hidden link md:flex">
                 [
-                <div class="text-xl relative">
-                    <div class="link-up transition-transform duration-500">Articles</div>
-                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Articles</div>
+                <div class="relative text-xl">
+                    <div class="transition-transform duration-500 link-up">Articles</div>
+                    <div class="absolute top-0 left-0 translate-y-full transition-transform duration-500 link-down">Articles</div>
                 </div>
                 ]
             </div>
-            <div id="footer-magazine" class="link flex flex-row gap-px overflow-hidden cursor-pointer">
+            <div id="footer-magazine" class="hidden cursor-pointer flex-row gap-px overflow-hidden link md:flex">
                 [
-                <div class="text-xl relative">
-                    <div class="link-up transition-transform duration-500">Magazines</div>
-                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Magazines</div>
+                <div class="relative text-xl">
+                    <div class="transition-transform duration-500 link-up">Magazines</div>
+                    <div class="absolute top-0 left-0 translate-y-full transition-transform duration-500 link-down">Magazines</div>
                 </div>
                 ]
             </div>
-            <div id="footer-newsletter" class="link flex flex-row gap-px overflow-hidden cursor-pointer">
+            <div id="footer-newsletter" class="hidden cursor-pointer flex-row gap-px overflow-hidden link md:flex">
                 [
-                <div class="text-xl relative">
-                    <div class="link-up transition-transform duration-500">Newsletter</div>
-                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Newsletter</div>
+                <div class="relative text-xl">
+                    <div class="transition-transform duration-500 link-up">Newsletter</div>
+                    <div class="absolute top-0 left-0 translate-y-full transition-transform duration-500 link-down">Newsletter</div>
                 </div>
                 ]
             </div>
-            <div></div>
-            <a href="" class="link flex flex-row gap-px overflow-hidden">
+            <div class="hidden md:block"></div>
+            <a href="" class="flex flex-row gap-px overflow-hidden link">
                 [
-                <div class="text-xl relative">
-                    <div class="link-up transition-transform duration-500">Socials</div>
-                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Socials</div>
+                <div class="relative text-xl">
+                    <div class="transition-transform duration-500 link-up">Socials</div>
+                    <div class="absolute top-0 left-0 translate-y-full transition-transform duration-500 link-down">Socials</div>
                 </div>
                 ]
             </a>
-            <a href="" class="link flex flex-row gap-px overflow-hidden">
+            <a href="" class="flex flex-row gap-px overflow-hidden link">
                 [
-                <div class="text-xl relative">
-                    <div class="link-up transition-transform duration-500">Contact</div>
-                    <div class="link-down absolute top-0 left-0 translate-y-full transition-transform duration-500">Contact</div>
+                <div class="relative text-xl">
+                    <div class="transition-transform duration-500 link-up">Contact</div>
+                    <div class="absolute top-0 left-0 translate-y-full transition-transform duration-500 link-down">Contact</div>
                 </div>
                 ]
             </a>

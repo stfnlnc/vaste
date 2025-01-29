@@ -8,15 +8,15 @@
 
     body {
         font-family: "Manrope", serif;
-        @apply text-xl font-semibold;
+        @apply text-xl font-medium tracking-tighter;
     }
 
     h1, .h1 {
-        @apply text-[10vw] leading-none m-0 p-0;
+        @apply text-[4.2rem] md:text-[11vw] leading-none m-0 p-0 font-medium tracking-tighter;
     }
 
     h2, .h2 {
-        @apply text-[2rem] leading-[120%] m-0 p-0;
+        @apply text-4xl md:text-2xl lg:text-[2vw] leading-[120%] m-0 p-0 tracking-tighter;
     }
 
     .icon-dot {
